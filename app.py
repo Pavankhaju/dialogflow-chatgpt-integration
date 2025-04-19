@@ -28,5 +28,5 @@ def webhook():
     # Send response back to Dialogflow
     return jsonify({"fulfillmentText": reply_text})
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True, port=5000)
