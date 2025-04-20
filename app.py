@@ -4,7 +4,7 @@ import openai
 app = Flask(__name__)
 
 # OpenAI API Key
-openai.api_key= "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"
+openai.api_key= "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"
 # Health check / root route
 @app.route("/", methods=["GET"])
 def health_check():
