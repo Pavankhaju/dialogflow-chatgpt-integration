@@ -6,7 +6,6 @@ app = Flask(__name__)
 # OpenAI API Key
  Openai.api_key= "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"
 
-
 @app.route("/webhook", methods=["POST"])
 def webhook():
     req = request.get_json(silent=True, force=True)
