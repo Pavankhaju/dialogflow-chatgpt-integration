@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import openai
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 # Set your OpenAI API key
 openai.api_key = "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"
@@ -36,5 +36,5 @@ def webhook():
         ]
     })
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
