@@ -8,8 +8,8 @@ app = Flask(__name__)
 USE_OPENROUTER = os.getenv("USE_OPENROUTER", "false").lower() == "true"
 
 if USE_OPENROUTER:
-    openai.api_base = "https://openrouter.ai/api/v1"
-    openai.api_key = os.getenv("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")
+    openrouter.api_base = "https://openrouter.ai/api/v1"
+    openrouter.api_key = os.getenv("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")
     MODEL = "openrouter/openai/gpt-3.5-turbo"
 else:
     openai.api_key = os.getenv("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")
