@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 import openai
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # OpenRouter config
 openai.api_key = os.getenv("OPENROUTER_API_KEY")
