@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+form requests
 import openai
 import os
 from dotenv import load_dotenv
@@ -10,7 +11,7 @@ openai.api_base = "https://openrouter.ai/api/v1"
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET"])
+@app.route("/", methods=["get"])
 def health_check():
     return "OK", 200
 
