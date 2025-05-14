@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-form requests
 import openai
 import os
 from dotenv import load_dotenv
